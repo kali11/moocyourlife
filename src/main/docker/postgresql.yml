@@ -1,0 +1,11 @@
+version: '2'
+services:
+    moocyourlife-postgresql:
+        image: postgres:9.5.4
+        # volumes:
+        #     - ~/volumes/jhipster/moocyourlife/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=moocyourlife
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
